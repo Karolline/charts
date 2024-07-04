@@ -301,6 +301,9 @@ spec:
               mountPath: /opt/bitnami/elasticsearch/tmp
               subPath: app-tmp-dir
             - name: empty-dir
+              mountPath: /bitnami/elasticsearch
+              subPath: app-volume-dir
+            - name: empty-dir
               mountPath: /opt/bitnami/elasticsearch/logs
               subPath: app-logs-dir
             - name: empty-dir
